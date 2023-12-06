@@ -1,3 +1,224 @@
+.title {
+  font-size: 5rem;
+  font-weight: 600;
+  font-family: "Antic Didone", serif;
+}
 
+.text {
+  font-size: 19px;
+  font-weight: 400;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+}
+
+.color-light {
+  color: #E0D8CB;
+}
+
+.second-light {
+  color: #F1EADF;
+}
+
+.color-teal {
+  color: #2F766B;
+}
+
+.color-dark {
+  color: #20433C;
+}
+
+.color-brown {
+  color: #81623A;
+}
+
+.back-light {
+  background-color: #E0D8CB;
+}
+
+.back-second-light {
+  background-color: #F1EADF;
+}
+
+.back-teal {
+  background-color: #2F766B;
+}
+
+.back-dark {
+  background-color: #20433C;
+}
+
+.back-brown {
+  background-color: #81623A;
+}
+
+.header .logo {
+  margin-top: -10px;
+}
+.header .logo img {
+  width: 15%;
+}
+@media screen and (max-width: 480px) {
+  .header .logo img {
+    width: 15% !important;
+    margin-left: -5px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header .logo img {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header .logo,
+.header .a-connect,
+.header .search {
+    position: absolute;
+  }
+}
+.header .a-connect,
+.header .search {
+  margin-top: 10px;
+}
+@media screen and (max-width: 480px) {
+  .header .a-connect,
+.header .search {
+    top: 15px;
+  }
+}
+.header .a-connect a,
+.header .search a {
+  font-size: 15px;
+}
+@media screen and (max-width: 480px) {
+  .header .a-connect {
+    left: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header .search {
+    right: 15px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  cursor: alias;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.input-search {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  z-index: 90;
+  height: 300px;
+  transition: 0.5s;
+  position: absolute;
+  overflow-x: hidden;
+}
+.input-search .fun-search {
+  padding: 80px 40px;
+}
+.input-search .fun-search .buttonclose {
+  top: 20px;
+  right: 40px;
+  position: absolute;
+}
+.input-search .fun-search .buttonclose .ic-close {
+  font-size: 40px;
+}
+.input-search .fun-search input[type=search] {
+  margin-top: 50px;
+}
+.input-search .fun-search .btn-search {
+  right: 40px;
+  width: 76px;
+  height: 76px;
+  margin-top: 50px;
+  border-radius: 25px;
+  position: absolute;
+  background-color: #20433C;
+}
+.input-search .fun-search .btn-search .ic-search {
+  color: #81623A;
+}
+
+.modal .modal-content {
+  padding: 25px;
+}
+.modal .modal-content .modal-header {
+  border-bottom: none !important;
+}
+.modal .modal-content .modal-header h4 {
+  font-size: 30px;
+}
+.modal .modal-content .modal-header .btnclose {
+  top: 10px;
+  right: 19px;
+  position: absolute;
+}
+.modal .modal-content .modal-header .btnclose .ic-close {
+  font-size: 42px !important;
+}
+.modal .modal-content .infos {
+  font-size: 14px !important;
+}
+.modal .modal-content .infos a {
+  color: #81623A;
+}
+
+.btn {
+  border-radius: 0px;
+  transition: all 0.3s;
+  font-size: 16px !important;
+  text-transform: uppercase;
+  padding: 20px 25px 20px 25px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+}
+
+.btn-brown {
+  color: #F1EADF;
+  background-color: #81623A;
+}
+.btn-brown:hover, .btn-brown:focus, .btn-brown:active {
+  color: #81623A;
+  border: 1px solid #81623A;
+}
+
+input[type=search],
+input[type=text],
+input[type=email],
+input[type=password],
+select {
+  font-size: 16px !important;
+  width: 100%;
+  padding: 25px;
+  color: #20433C;
+  border-radius: 25px;
+  border: 1px solid #20433C;
+  background-color: transparent;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+}
+input[type=search]::placeholder,
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder,
+select::placeholder {
+  color: #20433C;
+}
 
 /*# sourceMappingURL=style.css.map */

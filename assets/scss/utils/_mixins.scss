@@ -1,0 +1,31 @@
+@mixin title {
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: $title;
+}
+
+@mixin text {
+    font-size: 19px;
+    font-weight: 400;
+    text-align: justify;
+    font-family: $text;
+}
+
+@mixin subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: $subtitle;
+}
+
+@mixin input {
+    width: 100%;
+    padding: 25px;
+    color: $color--dark;
+    border-radius: 25px;
+    border: 1px solid $color--dark;
+    background-color: transparent;
+
+    &::placeholder {
+        color: $color--dark;
+    }
+}

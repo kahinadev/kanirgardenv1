@@ -1,0 +1,49 @@
+// Colors
+
+$color--light: #E0D8CB;
+$second--light: #F1EADF;
+$color--teal: #2F766B;
+$color--dark: #20433C;
+$color--brown: #81623A;
+
+// Classes colors
+
+.color-light {
+    color: $color--light;
+}
+
+.second-light {
+    color: $second--light;
+}
+
+.color-teal {
+    color: $color--teal;
+}
+
+.color-dark {
+    color: $color--dark;
+}
+
+.color-brown {
+    color: $color--brown;
+}
+
+.back-light {
+    background-color: $color--light;
+}
+
+.back-second-light {
+    background-color: $second--light;
+}
+
+.back-teal {
+    background-color: $color--teal;
+}
+
+.back-dark {
+    background-color: $color--dark;
+}
+
+.back-brown {
+    background-color: $color--brown;
+}

@@ -1,0 +1,15 @@
+$title: 'Antic Didone', serif;
+$text: 'Montserrat', sans-serif;
+$subtitle: 'Barlow', sans-serif;
+
+.title {
+    @include title;
+}
+
+.text {
+    @include text;
+}
+
+.subtitle {
+    @include subtitle;
+}

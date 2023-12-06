@@ -1,0 +1,43 @@
+.input-search {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    z-index: 90;
+    height: 300px;
+    transition: 0.5s;
+    position: absolute;
+    overflow-x: hidden;
+
+    .fun-search {
+        padding: 80px 40px;
+
+        .buttonclose {
+            top: 20px;
+            right: 40px;
+            position: absolute;
+
+            .ic-close {
+                font-size: 40px;
+            }
+        }
+
+        input[type="search"] {
+            margin-top: 50px;
+        }
+
+        .btn-search {
+            right: 40px;
+            width: 76px;
+            height: 76px;
+            margin-top: 50px;
+            border-radius: 25px;
+            position: absolute;
+            background-color: $color--dark;
+
+            .ic-search {
+                color: $color--brown
+            }
+        }
+    }
+}
