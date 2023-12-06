@@ -84,6 +84,10 @@
   }
 }
 
+.padding-30-all {
+  padding: 30px;
+}
+
 .top-30 {
   margin-top: 30px;
 }
@@ -502,7 +506,9 @@ section {
 input[type=search],
 input[type=text],
 input[type=email],
+input[type=tel],
 input[type=password],
+textarea,
 select {
   font-size: 16px !important;
   width: 100%;
@@ -518,7 +524,9 @@ select {
 input[type=search]::placeholder,
 input[type=text]::placeholder,
 input[type=email]::placeholder,
+input[type=tel]::placeholder,
 input[type=password]::placeholder,
+textarea::placeholder,
 select::placeholder {
   color: #20433C;
 }
@@ -591,10 +599,6 @@ select::placeholder {
 }
 .introduction-pres p {
   text-align: center !important;
-}
-
-.sessions .padding-30 {
-  padding: 30px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
