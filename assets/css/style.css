@@ -448,6 +448,12 @@ section {
     display: none;
   }
 }
+.slide .buttons {
+  width: 100%;
+  margin-left: 0%;
+  margin-top: 30px;
+  position: absolute;
+}
 .slide .carousel-control-prev,
 .slide .carousel-control-next {
   position: absolute;
@@ -456,34 +462,8 @@ section {
 .slide .carousel-control-prev .next-icon,
 .slide .carousel-control-next .prev-icon,
 .slide .carousel-control-next .next-icon {
-  color: #20433C;
+  color: #81623A;
   font-size: 20px;
-}
-.slide .carousel-control-prev {
-  left: -100px;
-}
-@media screen and (max-width: 480px) {
-  .slide .carousel-control-prev {
-    left: -18px !important;
-  }
-}
-@media screen and (max-width: 991px) {
-  .slide .carousel-control-prev {
-    left: -64px;
-  }
-}
-.slide .carousel-control-next {
-  right: -100px;
-}
-@media screen and (max-width: 480px) {
-  .slide .carousel-control-next {
-    right: -18px !important;
-  }
-}
-@media screen and (max-width: 991px) {
-  .slide .carousel-control-next {
-    right: -64px;
-  }
 }
 
 input[type=search],
@@ -540,22 +520,6 @@ select::placeholder {
 @media screen and (max-width: 991px) {
   .kanirgarden .inf-t {
     left: -2%;
-  }
-}
-.kanirgarden .inf-sec {
-  left: 50%;
-  width: 320px;
-  margin-top: -15%;
-}
-@media screen and (max-width: 480px) {
-  .kanirgarden .inf-sec {
-    left: 15% !important;
-    margin-top: -18% !important;
-  }
-}
-@media screen and (max-width: 991px) {
-  .kanirgarden .inf-sec {
-    left: 34%;
   }
 }
 

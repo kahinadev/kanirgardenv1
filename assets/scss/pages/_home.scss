@@ -19,21 +19,6 @@
             left: -2%;
         }
     }
-
-    .inf-sec {
-        left: 50%;
-        width: 320px;
-        margin-top: -15%;
-
-        @media screen and (max-width: $mobile) {
-            left: 15% !important;
-            margin-top: -18% !important;
-        }
-
-        @media screen and (max-width: $tablet-m) {
-            left: 34%;
-        }
-    }
 }
 
 .infos-product {
