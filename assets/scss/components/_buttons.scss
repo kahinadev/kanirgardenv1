@@ -1,4 +1,5 @@
 .btn {
+    border: none;
     border-radius: 0px;
     transition: all 0.3s;
     font-size: 16px !important;
@@ -16,5 +17,30 @@
     &:active {
         color: $color--brown;
         border: 1px solid $color--brown;
+    }
+}
+
+.btn-teal {
+    color: $color--light;
+    background-color: $color--teal;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color--teal;
+        border: 1px solid $color--teal;
+    }
+}
+
+.btn-light {
+    color: $color--brown;
+    background-color: $color--light;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color--light;
+        background-color: transparent;
+        border: 1px solid $color--light;
     }
 }

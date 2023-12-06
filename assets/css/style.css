@@ -5,7 +5,12 @@
 }
 @media screen and (max-width: 480px) {
   .title {
-    font-size: 3rem;
+    font-size: 3rem !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .title {
+    font-size: 3.8rem;
   }
 }
 
@@ -87,6 +92,10 @@
   text-transform: uppercase;
 }
 
+.border-radius {
+  border-radius: 25px;
+}
+
 .border-radius-left {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -100,6 +109,14 @@
 .border-radius-opp-right {
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
+}
+
+.border-light {
+  border: 2px solid #E0D8CB;
+}
+
+.border-dark {
+  border: 2px solid #20433C;
 }
 
 .nav-one .logo {
@@ -162,6 +179,11 @@
   margin-top: -15px;
   padding: 20px 0px;
 }
+@media screen and (max-width: 991px) {
+  .navbar {
+    z-index: 99;
+  }
+}
 @media screen and (max-width: 480px) {
   .navbar {
     width: 100%;
@@ -186,9 +208,8 @@
   font-family: "Montserrat", sans-serif;
 }
 .navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .nav-link:active {
+  color: #2F766B;
   font-weight: 900;
-  border-top: 2px solid #2F766B;
-  border-bottom: 2px solid #2F766B;
 }
 @media screen and (max-width: 480px) {
   .navbar .nav-res {
@@ -339,6 +360,7 @@ section {
 }
 
 .btn {
+  border: none;
   border-radius: 0px;
   transition: all 0.3s;
   font-size: 16px !important;
@@ -356,6 +378,112 @@ section {
 .btn-brown:hover, .btn-brown:focus, .btn-brown:active {
   color: #81623A;
   border: 1px solid #81623A;
+}
+
+.btn-teal {
+  color: #E0D8CB;
+  background-color: #2F766B;
+}
+.btn-teal:hover, .btn-teal:focus, .btn-teal:active {
+  color: #2F766B;
+  border: 1px solid #2F766B;
+}
+
+.btn-light {
+  color: #81623A;
+  background-color: #E0D8CB;
+}
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  color: #E0D8CB;
+  background-color: transparent;
+  border: 1px solid #E0D8CB;
+}
+
+.dropdown-menu.show {
+  border: none;
+  margin-top: 20px;
+  border-radius: 0px;
+  background-color: #E0D8CB;
+}
+@media screen and (max-width: 991px) {
+  .dropdown-menu.show {
+    margin-top: 0px;
+  }
+}
+.dropdown-menu.show .dropdown-item {
+  color: #20433C;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+.dropdown-menu.show .dropdown-item:hover, .dropdown-menu.show .dropdown-item:focus, .dropdown-menu.show .dropdown-item:active {
+  color: #2F766B;
+  font-weight: 900;
+}
+.dropdown-menu.show .dropdown-item:hover, .dropdown-menu.show .dropdown-item:focus, .dropdown-menu.show .dropdown-item:active {
+  color: #2F766B;
+  padding: 15px;
+  border: none !important;
+  background-color: white;
+}
+
+.card {
+  border: none;
+}
+
+@media screen and (min-width: 577px) {
+  .cards {
+    display: flex;
+  }
+
+  .card {
+    margin: 0 0.5em;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+.slide .carousel-control-prev,
+.slide .carousel-control-next {
+  position: absolute;
+}
+.slide .carousel-control-prev .prev-icon,
+.slide .carousel-control-prev .next-icon,
+.slide .carousel-control-next .prev-icon,
+.slide .carousel-control-next .next-icon {
+  color: #20433C;
+  font-size: 20px;
+}
+.slide .carousel-control-prev {
+  left: -100px;
+}
+@media screen and (max-width: 480px) {
+  .slide .carousel-control-prev {
+    left: -18px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .slide .carousel-control-prev {
+    left: -64px;
+  }
+}
+.slide .carousel-control-next {
+  right: -100px;
+}
+@media screen and (max-width: 480px) {
+  .slide .carousel-control-next {
+    right: -18px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .slide .carousel-control-next {
+    right: -64px;
+  }
 }
 
 input[type=search],
@@ -380,6 +508,20 @@ input[type=email]::placeholder,
 input[type=password]::placeholder,
 select::placeholder {
   color: #20433C;
+}
+
+#btn-top {
+  right: 15px;
+  bottom: 15px;
+  padding: 20px;
+  z-index: 100;
+  display: none;
+  border: none;
+  position: fixed;
+}
+#btn-top i {
+  color: #2F766B;
+  font-size: 20px;
 }
 
 .kanirgarden .inf-text {
@@ -414,6 +556,29 @@ select::placeholder {
 @media screen and (max-width: 991px) {
   .kanirgarden .inf-sec {
     left: 34%;
+  }
+}
+
+.infos-product img {
+  height: 625px;
+}
+@media screen and (max-width: 480px) {
+  .infos-product img {
+    height: 320px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .infos-product img {
+    height: 608px;
+  }
+}
+.infos-product .import-infos span i {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 480px) {
+  .pres-product img {
+    height: 400px;
   }
 }
 

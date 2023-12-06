@@ -35,3 +35,32 @@
         }
     }
 }
+
+.infos-product {
+    img {
+        height: 625px;
+
+        @media screen and (max-width: $mobile) {
+            height: 320px !important;
+        }
+
+        @media screen and (max-width: $tablet-m) {
+            height: 608px;
+        }
+    }
+    .import-infos {
+        span {
+            i {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.pres-product {
+    img {
+        @media screen and (max-width: $mobile) {
+            height: 400px;
+        }
+    }
+}

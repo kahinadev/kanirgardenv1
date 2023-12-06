@@ -1,0 +1,54 @@
+@media screen and (min-width: 577px) {
+    .cards {
+        display: flex;
+    }
+
+    .card {
+        margin: 0 0.5em;
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card:not(:first-child) {
+        display: none;
+    }
+}
+
+.slide {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        position: absolute;
+
+        .prev-icon,
+        .next-icon {
+            color: $color--dark;
+            font-size: 20px;
+        }
+    }
+
+    .carousel-control-prev {
+        left: -100px;
+
+        @media screen and (max-width: $mobile) {
+            left: -18px !important;
+        }
+
+        @media screen and (max-width: $tablet-m) {
+            left: -64px;
+        }
+    }
+
+    .carousel-control-next {
+        right: -100px;
+
+        @media screen and (max-width: $mobile) {
+            right: -18px !important;
+        }
+
+        @media screen and (max-width: $tablet-m) {
+            right: -64px;
+        }
+    }
+}

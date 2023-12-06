@@ -1,0 +1,23 @@
+.dropdown-menu.show {
+    border: none;
+    margin-top: 20px;
+    border-radius: 0px;
+    background-color: $color--light;
+
+    @media screen and (max-width: $tablet-m) {
+        margin-top: 0px;
+    }
+    
+    .dropdown-item {
+        @include nav-link;
+    
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color--teal;
+            padding: 15px;
+            border: none !important;
+            background-color: white;
+        }
+    }
+}

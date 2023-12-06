@@ -4,7 +4,11 @@
     font-family: $title;
 
     @media screen and (max-width: $mobile) {
-        font-size: 3rem;
+        font-size: 3rem !important;
+    }
+
+    @media screen and (max-width: $tablet-m) {
+        font-size: 3.8rem;
     }
 }
 
@@ -45,8 +49,7 @@
     &:hover,
     &:focus,
     &:active {
+        color: $color--teal;
         font-weight: 900;
-        border-top: 2px solid $color--teal;
-        border-bottom: 2px solid $color--teal;
     }
 }
