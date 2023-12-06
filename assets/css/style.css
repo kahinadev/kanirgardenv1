@@ -119,6 +119,11 @@
   border: 2px solid #20433C;
 }
 
+.image-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .nav-one .logo {
   margin-top: -10px;
 }
@@ -466,6 +471,34 @@ section {
   font-size: 20px;
 }
 
+.nav-tabs {
+  border-radius: 25px;
+  border-bottom: 1px solid #81623A;
+}
+.nav-tabs .nav-link {
+  border: none;
+  padding: 30px;
+  color: #E0D8CB;
+  border-radius: 25px;
+}
+.nav-tabs .nav-link.active {
+  color: #E0D8CB;
+  background-color: #81623A;
+}
+
+.tab-content .title {
+  font-size: 2rem !important;
+}
+.tab-content .subtitle {
+  font-size: 15px !important;
+}
+.tab-content blockquote {
+  color: #F1EADF;
+  font-size: 15px;
+  padding-left: 20px;
+  border-left: 1px solid #81623A;
+}
+
 input[type=search],
 input[type=text],
 input[type=email],
@@ -544,6 +577,20 @@ select::placeholder {
   .pres-product img {
     height: 400px;
   }
+}
+
+.introduction-pres {
+  height: 780px;
+  background-position: center;
+  background-image: url("../../../kanirgarden/assets/img/centre/bannerspa.png");
+}
+@media screen and (max-width: 480px) {
+  .introduction-pres {
+    height: 580px !important;
+  }
+}
+.introduction-pres p {
+  text-align: center !important;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+.introduction-pres {
+    height: 780px;
+    background-position: center;
+    background-image: url('../../../kanirgarden/assets/img/centre/bannerspa.png');
+
+    @media screen and (max-width: $mobile) {
+        height: 580px !important;
+    }
+    p {
+        text-align: center !important;
+    }
+}
