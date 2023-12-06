@@ -29,3 +29,20 @@
         color: $color--dark;
     }
 }
+
+@mixin nav-link {
+    color: $color--dark;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-family: $text;
+
+    &:hover,
+    &:focus,
+    &:active {
+        font-weight: 900;
+        border-top: 2px solid $color--teal;
+        border-bottom: 2px solid $color--teal;
+    }
+}

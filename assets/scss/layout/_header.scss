@@ -1,4 +1,4 @@
-.header {
+.nav-one {
     .logo {
         margin-top: -10px;
 
@@ -53,6 +53,50 @@
     .search {
         @media screen and (max-width: $mobile) {
             right: 15px;
+        }
+    }
+}
+
+.navbar {
+    margin-top: -15px;
+    padding: 20px 0px;
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+        margin-top: 25px !important;
+        position: absolute;
+    }
+
+    .navbar-toggler {
+        border: 1px solid $color--dark;
+    }
+
+    .navbar-nav {
+        @media screen and (max-width: $tablet-m) {
+            margin-top: 20px;
+        }
+    }
+
+    .nav-link {
+        @include nav-link;
+    }
+
+    .nav-res {
+
+        @media screen and (max-width: $mobile) {
+            right: 15px !important;
+        }
+
+        @media screen and (max-width: $tablet-m) {
+            top: 25px;
+            right: 60px;
+            position: absolute;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            border: none;
         }
     }
 }
