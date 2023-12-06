@@ -3,6 +3,11 @@
   font-weight: 600;
   font-family: "Antic Didone", serif;
 }
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 3rem;
+  }
+}
 
 .text {
   font-size: 19px;
@@ -55,6 +60,46 @@
 
 .back-brown {
   background-color: #81623A;
+}
+
+.max {
+  width: 100%;
+}
+
+.padding-25 {
+  padding: 25px;
+}
+
+.padding-30 {
+  padding: 30px;
+}
+@media screen and (max-width: 480px) {
+  .padding-30 {
+    padding: 30px 0;
+  }
+}
+
+.top-30 {
+  margin-top: 30px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.border-radius-left {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.border-radius-right {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.border-radius-opp-right {
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .nav-one .logo {
@@ -161,6 +206,54 @@
   border: none;
 }
 
+.footer .one {
+  padding: 60px 0;
+}
+@media screen and (max-width: 480px) {
+  .footer .one {
+    padding: 60px 15px;
+  }
+}
+.footer .one .logo img {
+  width: 15%;
+}
+@media screen and (max-width: 480px) {
+  .footer .one .logo img {
+    width: 18% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer .one .logo img {
+    width: 10%;
+  }
+}
+.footer .one .logo h4 {
+  margin-top: 24px;
+  margin-left: 5px;
+}
+.footer .one h4,
+.footer .one h5 {
+  font-size: 17px;
+}
+@media screen and (max-width: 480px) {
+  .footer .one ul {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer .one h5 {
+    margin-top: 30px;
+  }
+}
+.footer .one p,
+.footer .one a {
+  font-size: 14px;
+}
+.footer h6 {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -168,6 +261,19 @@
   cursor: alias;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+img {
+  object-fit: cover;
+}
+
+section {
+  padding: 100px 0;
+}
+@media screen and (max-width: 480px) {
+  section {
+    padding: 140px 15px;
+  }
 }
 
 .input-search {
@@ -274,6 +380,41 @@ input[type=email]::placeholder,
 input[type=password]::placeholder,
 select::placeholder {
   color: #20433C;
+}
+
+.kanirgarden .inf-text {
+  position: absolute;
+  background-color: white;
+}
+.kanirgarden .inf-text span {
+  font-size: 17px !important;
+}
+@media screen and (max-width: 480px) {
+  .kanirgarden .inf-t {
+    left: 0% !important;
+    margin-top: -2%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .kanirgarden .inf-t {
+    left: -2%;
+  }
+}
+.kanirgarden .inf-sec {
+  left: 50%;
+  width: 320px;
+  margin-top: -15%;
+}
+@media screen and (max-width: 480px) {
+  .kanirgarden .inf-sec {
+    left: 15% !important;
+    margin-top: -18% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .kanirgarden .inf-sec {
+    left: 34%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

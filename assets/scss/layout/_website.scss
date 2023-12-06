@@ -6,3 +6,15 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+img {
+    object-fit: cover;
+}
+
+section {
+    padding: 100px 0;
+
+    @media screen and (max-width: $mobile) {
+        padding: 140px 15px;
+    }
+}

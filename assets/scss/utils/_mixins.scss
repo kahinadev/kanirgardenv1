@@ -2,6 +2,10 @@
     font-size: 5rem;
     font-weight: 600;
     font-family: $title;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 3rem;
+    }
 }
 
 @mixin text {

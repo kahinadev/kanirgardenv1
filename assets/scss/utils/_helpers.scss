@@ -1,0 +1,48 @@
+// Width
+
+.max {
+    width: 100%;
+}
+
+// Padding
+
+.padding-25 {
+    padding: 25px;
+}
+
+.padding-30 {
+    padding: 30px;
+
+    @media screen and (max-width: $mobile) {
+        padding: 30px 0;
+    }
+}
+
+// Margin 
+
+.top-30 {
+    margin-top: 30px;
+}
+
+// Transform 
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+// Border radius 
+
+.border-radius-left {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.border-radius-right {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.border-radius-opp-right {
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
